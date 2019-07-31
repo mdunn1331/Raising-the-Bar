@@ -14,7 +14,6 @@ depends-top-level:
 depends-member:
 - ["15Raising_the_Bar14UnOrderedDrinkC", "Double"]
 - ["15Raising_the_Bar14UnOrderedDrinkC", "String"]
-- ["15Raising_the_Bar14UnOrderedDrinkC", "deinit"]
 - ["15Raising_the_Bar14UnOrderedDrinkC", "description"]
 - ["15Raising_the_Bar14UnOrderedDrinkC", "imageName"]
 - ["15Raising_the_Bar14UnOrderedDrinkC", "init"]

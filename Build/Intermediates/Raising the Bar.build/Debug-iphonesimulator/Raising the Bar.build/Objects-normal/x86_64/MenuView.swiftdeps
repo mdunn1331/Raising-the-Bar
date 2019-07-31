@@ -11,21 +11,24 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "..<"
+- !private "AssignmentPrecedence"
+- "BooleanLiteralType"
 - !private "Circle"
 - !private "Color"
+- !private "DrinkModal"
 - "FloatLiteralType"
 - !private "Font"
 - !private "ForEach"
 - !private "HStack"
 - !private "Image"
-- !private "IntegerLiteralType"
+- "IntegerLiteralType"
 - "MenuController"
 - "MenuView"
 - "MenuView_Previews"
-- !private "OrderedDrink"
 - "PreviewProvider"
 - !private "ScrollView"
 - !private "Spacer"
+- "State"
 - !private "String"
 - !private "StringLiteralType"
 - "TabController"
@@ -39,26 +42,24 @@ depends-member:
 - !private ["7SwiftUI10AnimatableP", "init"]
 - !private ["7SwiftUI10AnimatableP", "stroke"]
 - !private ["7SwiftUI10AnimatableP", "topLeading"]
-- !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
 - !private ["s10ArraySliceV", "description"]
 - !private ["s10ArraySliceV", "name"]
 - !private ["s10ArraySliceV", "price"]
-- !private ["SK", "append"]
 - !private ["SK", "count"]
 - !private ["SK", "description"]
 - !private ["SK", "init"]
 - !private ["SK", "name"]
 - !private ["SK", "price"]
 - !private ["SK", "subscript"]
-- !private ["s7CVarArgP", "append"]
+- ["7SwiftUI18BindingConvertibleP", "init"]
+- ["7SwiftUI18BindingConvertibleP", "wrappedValue"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["7SwiftUI6CircleV", "init"]
 - !private ["7SwiftUI6CircleV", "stroke"]
-- !private ["Sl", "append"]
 - !private ["Sl", "count"]
 - !private ["Sl", "description"]
 - !private ["Sl", "init"]
@@ -69,27 +70,23 @@ depends-member:
 - !private ["7SwiftUI5ColorV", "customPurple"]
 - !private ["7SwiftUI5ColorV", "white"]
 - !private ["SL", "init"]
-- !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
 - !private ["10Foundation15ContiguousBytesP", "description"]
 - !private ["10Foundation15ContiguousBytesP", "name"]
 - !private ["10Foundation15ContiguousBytesP", "price"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
-- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "description"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "name"]
 - !private ["s28CustomDebugStringConvertibleP", "price"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
-- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "description"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "name"]
 - !private ["s17CustomReflectableP", "price"]
 - !private ["s17CustomReflectableP", "subscript"]
-- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "bluePrupleGradient"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "customPurple"]
@@ -99,23 +96,23 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "price"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "white"]
-- !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "count"]
 - !private ["10Foundation12DataProtocolP", "description"]
 - !private ["10Foundation12DataProtocolP", "name"]
 - !private ["10Foundation12DataProtocolP", "price"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
-- !private ["Se", "append"]
 - !private ["Se", "count"]
 - !private ["Se", "init"]
 - !private ["Se", "subscript"]
 - !private ["7SwiftUI4FontV6DesignO", "default"]
+- !private ["15Raising_the_Bar10DrinkModalV", "deinit"]
+- !private ["15Raising_the_Bar10DrinkModalV", "init"]
 - !private ["7SwiftUI18DynamicViewContentP", "init"]
-- !private ["SE", "append"]
+- ["7SwiftUI19DynamicViewPropertyP", "init"]
+- ["7SwiftUI19DynamicViewPropertyP", "wrappedValue"]
 - !private ["SE", "count"]
 - !private ["SE", "init"]
 - !private ["SE", "subscript"]
-- !private ["SQ", "append"]
 - !private ["SQ", "bluePrupleGradient"]
 - !private ["SQ", "bold"]
 - !private ["SQ", "bottomTrailing"]
@@ -139,7 +136,6 @@ depends-member:
 - !private ["SQ", "topLeading"]
 - !private ["SQ", "trailing"]
 - !private ["SQ", "white"]
-- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "description"]
 - !private ["s25ExpressibleByArrayLiteralP", "leading"]
@@ -159,7 +155,6 @@ depends-member:
 - !private ["7SwiftUI7GestureP", "onEnded"]
 - !private ["7SwiftUI6HStackV", "background"]
 - !private ["7SwiftUI6HStackV", "init"]
-- !private ["SH", "append"]
 - !private ["SH", "bluePrupleGradient"]
 - !private ["SH", "bold"]
 - !private ["SH", "bottomTrailing"]
@@ -185,17 +180,20 @@ depends-member:
 - !private ["15Raising_the_Bar4MenuC", "menuItems"]
 - ["15Raising_the_Bar14MenuControllerC", "menu"]
 - ["15Raising_the_Bar14MenuControllerC", "sharedInstance"]
+- !private ["15Raising_the_Bar8MenuViewV", "$itemPresentationIndex"]
+- !private ["15Raising_the_Bar8MenuViewV", "$presentItemModal"]
 - ["15Raising_the_Bar8MenuViewV", "Body"]
 - !private ["15Raising_the_Bar8MenuViewV", "Circle"]
 - !private ["15Raising_the_Bar8MenuViewV", "Color"]
+- !private ["15Raising_the_Bar8MenuViewV", "DrinkModal"]
 - !private ["15Raising_the_Bar8MenuViewV", "Font"]
 - !private ["15Raising_the_Bar8MenuViewV", "ForEach"]
 - !private ["15Raising_the_Bar8MenuViewV", "HStack"]
 - !private ["15Raising_the_Bar8MenuViewV", "Image"]
 - ["15Raising_the_Bar8MenuViewV", "MenuController"]
-- !private ["15Raising_the_Bar8MenuViewV", "OrderedDrink"]
 - !private ["15Raising_the_Bar8MenuViewV", "ScrollView"]
 - !private ["15Raising_the_Bar8MenuViewV", "Spacer"]
+- ["15Raising_the_Bar8MenuViewV", "State"]
 - !private ["15Raising_the_Bar8MenuViewV", "String"]
 - ["15Raising_the_Bar8MenuViewV", "TabController"]
 - !private ["15Raising_the_Bar8MenuViewV", "TapGesture"]
@@ -203,12 +201,17 @@ depends-member:
 - !private ["15Raising_the_Bar8MenuViewV", "VStack"]
 - ["15Raising_the_Bar8MenuViewV", "View"]
 - ["15Raising_the_Bar8MenuViewV", "_Default_Body"]
+- !private ["15Raising_the_Bar8MenuViewV", "_itemPresentationIndex"]
 - ["15Raising_the_Bar8MenuViewV", "_makeView"]
 - ["15Raising_the_Bar8MenuViewV", "_makeViewList"]
+- !private ["15Raising_the_Bar8MenuViewV", "_presentItemModal"]
 - ["15Raising_the_Bar8MenuViewV", "body"]
 - ["15Raising_the_Bar8MenuViewV", "deinit"]
 - ["15Raising_the_Bar8MenuViewV", "init"]
+- !private ["15Raising_the_Bar8MenuViewV", "itemModal"]
+- !private ["15Raising_the_Bar8MenuViewV", "itemPresentationIndex"]
 - !private ["15Raising_the_Bar8MenuViewV", "menu"]
+- !private ["15Raising_the_Bar8MenuViewV", "presentItemModal"]
 - !private ["15Raising_the_Bar8MenuViewV", "tabController"]
 - !private ["15Raising_the_Bar17MenuView_PreviewsV", "MenuView"]
 - ["15Raising_the_Bar17MenuView_PreviewsV", "Previews"]
@@ -221,19 +224,16 @@ depends-member:
 - ["15Raising_the_Bar17MenuView_PreviewsV", "platform"]
 - ["15Raising_the_Bar17MenuView_PreviewsV", "previews"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["SM", "append"]
 - !private ["SM", "count"]
 - !private ["SM", "description"]
 - !private ["SM", "name"]
 - !private ["SM", "price"]
 - !private ["SM", "subscript"]
-- !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["10Foundation19MutableDataProtocolP", "count"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["s9OptionSetP", "leading"]
 - !private ["s9OptionSetP", "top"]
 - !private ["s9OptionSetP", "trailing"]
-- !private ["15Raising_the_Bar12OrderedDrinkC", "init"]
 - !private ["7SwiftUI15PreviewProviderP", "MenuView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -242,13 +242,11 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
-- !private ["Sk", "append"]
 - !private ["Sk", "count"]
 - !private ["Sk", "description"]
 - !private ["Sk", "name"]
 - !private ["Sk", "price"]
 - !private ["Sk", "subscript"]
-- !private ["Sm", "append"]
 - !private ["Sm", "count"]
 - !private ["Sm", "description"]
 - !private ["Sm", "init"]
@@ -260,7 +258,6 @@ depends-member:
 - !private ["SY", "trailing"]
 - !private ["7SwiftUI10ScrollViewV", "init"]
 - !private ["7SwiftUI10ScrollViewV", "padding"]
-- !private ["ST", "append"]
 - !private ["ST", "count"]
 - !private ["ST", "description"]
 - !private ["ST", "init"]
@@ -280,13 +277,14 @@ depends-member:
 - !private ["7SwiftUI10ShapeStyleP", "white"]
 - !private ["s5SliceV", "price"]
 - !private ["7SwiftUI6SpacerV", "init"]
+- ["7SwiftUI5StateV", "init"]
+- ["7SwiftUI5StateV", "wrappedValue"]
 - !private ["SS", "init"]
 - !private ["7SwiftUI18LocalizedStringKeyV0D13InterpolationV", "appendInterpolation"]
 - !private ["7SwiftUI18LocalizedStringKeyV0D13InterpolationV", "appendLiteral"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["Sy", "init"]
-- !private ["15Raising_the_Bar13TabControllerC", "currentDrinks"]
 - ["15Raising_the_Bar13TabControllerC", "sharedInstance"]
 - !private ["7SwiftUI10TapGestureV", "init"]
 - !private ["7SwiftUI10TapGestureV", "onEnded"]
@@ -303,15 +301,16 @@ depends-member:
 - !private ["7SwiftUI9UnitPointV", "topLeading"]
 - !private ["7SwiftUI6VStackV", "init"]
 - !private ["7SwiftUI6VStackV", "padding"]
+- !private ["7SwiftUI4ViewP", "$presentItemModal"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Circle"]
 - !private ["7SwiftUI4ViewP", "Color"]
+- !private ["7SwiftUI4ViewP", "DrinkModal"]
 - !private ["7SwiftUI4ViewP", "Font"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - ["7SwiftUI4ViewP", "MenuController"]
-- !private ["7SwiftUI4ViewP", "OrderedDrink"]
 - !private ["7SwiftUI4ViewP", "ScrollView"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
 - !private ["7SwiftUI4ViewP", "String"]
@@ -335,23 +334,24 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "gesture"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "itemModal"]
+- !private ["7SwiftUI4ViewP", "itemPresentationIndex"]
 - !private ["7SwiftUI4ViewP", "menu"]
 - !private ["7SwiftUI4ViewP", "overlay"]
 - !private ["7SwiftUI4ViewP", "padding"]
+- !private ["7SwiftUI4ViewP", "presentItemModal"]
 - !private ["7SwiftUI4ViewP", "resizable"]
 - !private ["7SwiftUI4ViewP", "scaledToFill"]
+- !private ["7SwiftUI4ViewP", "sheet"]
 - !private ["7SwiftUI4ViewP", "stroke"]
-- !private ["7SwiftUI4ViewP", "tabController"]
 - !private ["7SwiftUI4ViewP", "white"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
-- !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "description"]
 - !private ["s14_ArrayProtocolP", "name"]
 - !private ["s14_ArrayProtocolP", "price"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
-- !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "description"]
 - !private ["s24_DestructorSafeContainerP", "name"]
@@ -360,14 +360,11 @@ depends-member:
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "count"]
 - !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
-- !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
@@ -385,6 +382,7 @@ depends-nominal:
 - !private "Sa"
 - !private "s10ArraySliceV"
 - !private "SK"
+- "7SwiftUI18BindingConvertibleP"
 - !private "s7CVarArgP"
 - !private "7SwiftUI6CircleV"
 - !private "Sl"
@@ -397,7 +395,9 @@ depends-nominal:
 - !private "10Foundation12DataProtocolP"
 - !private "Se"
 - !private "7SwiftUI4FontV6DesignO"
+- !private "15Raising_the_Bar10DrinkModalV"
 - !private "7SwiftUI18DynamicViewContentP"
+- "7SwiftUI19DynamicViewPropertyP"
 - !private "SE"
 - !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
@@ -423,7 +423,6 @@ depends-nominal:
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "s9OptionSetP"
-- !private "15Raising_the_Bar12OrderedDrinkC"
 - "7SwiftUI15PreviewProviderP"
 - !private "Sk"
 - !private "Sm"
@@ -436,6 +435,7 @@ depends-nominal:
 - !private "7SwiftUI10ShapeStyleP"
 - !private "s5SliceV"
 - !private "7SwiftUI6SpacerV"
+- "7SwiftUI5StateV"
 - !private "SS"
 - !private "7SwiftUI18LocalizedStringKeyV0D13InterpolationV"
 - !private "s27StringInterpolationProtocolP"
@@ -1692,4 +1692,4 @@ depends-external:
 - "/Users/md185241/Desktop/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Users/md185241/Desktop/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Users/md185241/Desktop/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "32b109a126b7f7c63bdf5842038e58d4"
+interface-hash: "930978dfc1e4df107a44dccfb0a7029b"

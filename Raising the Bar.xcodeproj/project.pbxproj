@@ -10,6 +10,7 @@
 		486D336622F0E51400933197 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D336522F0E51400933197 /* AccountView.swift */; };
 		486D336822F11EF200933197 /* ChangeCardModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D336722F11EF200933197 /* ChangeCardModal.swift */; };
 		48BBFA4322F1E797003C4DC2 /* ColorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BBFA4222F1E797003C4DC2 /* ColorConfig.swift */; };
+		48BBFA4522F23618003C4DC2 /* DrinkModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BBFA4422F23618003C4DC2 /* DrinkModal.swift */; };
 		48E4420C22F0780C00830710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4420B22F0780C00830710 /* AppDelegate.swift */; };
 		48E4420E22F0780C00830710 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4420D22F0780C00830710 /* SceneDelegate.swift */; };
 		48E4421022F0780C00830710 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4420F22F0780C00830710 /* ContentView.swift */; };
@@ -29,6 +30,7 @@
 		486D336522F0E51400933197 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		486D336722F11EF200933197 /* ChangeCardModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCardModal.swift; sourceTree = "<group>"; };
 		48BBFA4222F1E797003C4DC2 /* ColorConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConfig.swift; sourceTree = "<group>"; };
+		48BBFA4422F23618003C4DC2 /* DrinkModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModal.swift; sourceTree = "<group>"; };
 		48E4420822F0780C00830710 /* Raising the Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raising the Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E4420B22F0780C00830710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48E4420D22F0780C00830710 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				48E4423022F0A21000830710 /* CurrentTabView.swift */,
 				486D336522F0E51400933197 /* AccountView.swift */,
 				486D336722F11EF200933197 /* ChangeCardModal.swift */,
+				48BBFA4422F23618003C4DC2 /* DrinkModal.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				486D336622F0E51400933197 /* AccountView.swift in Sources */,
 				486D336822F11EF200933197 /* ChangeCardModal.swift in Sources */,
 				48E4420C22F0780C00830710 /* AppDelegate.swift in Sources */,
+				48BBFA4522F23618003C4DC2 /* DrinkModal.swift in Sources */,
 				48E4422F22F09B6B00830710 /* MenuView.swift in Sources */,
 				48E4422122F0913800830710 /* TabController.swift in Sources */,
 				48E4420E22F0780C00830710 /* SceneDelegate.swift in Sources */,

@@ -69,7 +69,7 @@ struct ChangeCardModal: View {
                             .frame(width: 320, height: 54, alignment: .center)
                             .background(Color.customPurple)
                             .foregroundColor(Color.white)
-                            .cornerRadius(8)
+                            .cornerRadius(100)
                     }
                 }
                     .padding()

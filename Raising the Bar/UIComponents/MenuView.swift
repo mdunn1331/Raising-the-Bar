@@ -12,6 +12,13 @@ struct MenuView: View {
     
     private var menu = MenuController.sharedInstance.menu
     private var tabController = TabController.sharedInstance
+    
+    @State private var presentItemModal = false
+    @State private var itemPresentationIndex = 0
+    
+    private var itemModal: some View {
+        DrinkModal(isPresented: self.$presentItemModal, menuItem: menu.menuItems[self.itemPresentationIndex])
+    }
         
     var body: some View {
         VStack {
@@ -19,17 +26,7 @@ struct MenuView: View {
                 .font(Font.system(size: 24, design: .default).bold())
                 .foregroundColor(Color.white)
                 .padding()
-//            Path { path in
-//                path.move(to: CGPoint(x: -15, y: 50))
-//                path.addQuadCurve(to: CGPoint(x: 250, y: 50),
-//                                  control: CGPoint(x: 75, y: 0))
-//                path.move(to: CGPoint(x: 100, y: 50))
-//                path.addQuadCurve(to: CGPoint(x: 500, y: 50),
-//                                  control: CGPoint(x: 400, y: -75))
-//            }
-//                .fill(Color.white)
-//                .frame(width: UIScreen.main.bounds.width, height: 40, alignment: .leading)
-//                .padding(.all, 0)
+
             ScrollView {
                 ForEach(0..<menu.menuItems.count) { index in
                     HStack {
@@ -56,8 +53,8 @@ struct MenuView: View {
                         .gesture(
                             TapGesture()
                                 .onEnded({
-                                    let orderedDrink = OrderedDrink(drink: self.menu.menuItems[index])
-                                    self.tabController.currentDrinks.append(orderedDrink)
+                                    self.presentItemModal = true
+                                    self.itemPresentationIndex = index
                                 })
                     )
                 }
@@ -65,11 +62,13 @@ struct MenuView: View {
                 .padding(.leading, 16)
                 .padding(.trailing, 16)
                 .background(Color.white)
-                
         }
             .padding(.top, 30)
             .background(Color.bluePrupleGradient(start: .topLeading, end: .bottomTrailing))
             .edgesIgnoringSafeArea(.top)
+            .sheet(isPresented: self.$presentItemModal, onDismiss: { self.presentItemModal = false }, content: {
+                self.itemModal
+            })
     }
 }
 
