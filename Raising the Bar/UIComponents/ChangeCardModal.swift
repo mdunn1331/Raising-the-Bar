@@ -75,7 +75,6 @@ struct ChangeCardModal: View {
                     .padding()
             }
                 .background(Color.customGrey)
-//                .cornerRadius(8)
                 .padding()
             Spacer()
         }

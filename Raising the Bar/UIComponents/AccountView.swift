@@ -23,7 +23,7 @@ struct AccountView: View {
                 .overlay(Circle().stroke(Color.white, lineWidth: 6))
                 .frame(width: 132, height: 132, alignment: .center)
                 .padding(.bottom, 12)
-            Text("Oreo Xia")
+            Text(self.cardName)
                 .font(Font.system(size: 24, design: .default))
                 .foregroundColor(Color.white)
         }
@@ -66,7 +66,7 @@ struct AccountView: View {
                         Text(self.cardText)
                             .font(Font.system(size:15))
                         Spacer()
-                        Text("Oreo Xia")
+                        Text(self.cardName)
                             .font(Font.system(size:20))
                     }
                 }

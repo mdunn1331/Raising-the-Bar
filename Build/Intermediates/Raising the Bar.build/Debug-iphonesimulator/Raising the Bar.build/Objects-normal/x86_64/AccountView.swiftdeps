@@ -272,6 +272,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "bold"]
 - !private ["7SwiftUI4ViewP", "border"]
 - !private ["7SwiftUI4ViewP", "cardChangeModal"]
+- !private ["7SwiftUI4ViewP", "cardName"]
 - !private ["7SwiftUI4ViewP", "cardText"]
 - !private ["7SwiftUI4ViewP", "changeCardView"]
 - !private ["7SwiftUI4ViewP", "clear"]
