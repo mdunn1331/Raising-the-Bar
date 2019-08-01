@@ -46,6 +46,7 @@ struct CurrentTabView: View {
                 Button(action: {
                     TabController.sharedInstance.clearTab()
                     self.currentDrinks = TabController.sharedInstance.currentDrinks
+                    
                 }) {
                     Text("Checkout")
                         .frame(width: 320, height: 54, alignment: .center)

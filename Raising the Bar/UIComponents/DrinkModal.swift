@@ -52,14 +52,14 @@ struct DrinkModal: View {
                                 .frame(width: 320, height: 54, alignment: .center)
                                 .background(Color.customPurple)
                                 .foregroundColor(Color.white)
-                                .cornerRadius(100)
+                                .cornerRadius(25)
                         }
                             .padding()
                     }
                 }
                     .background(Color.white)
                     .padding()
-                    .cornerRadius(8)
+                    .cornerRadius(20)
                 Spacer()
             }
             Spacer()

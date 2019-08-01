@@ -15,19 +15,15 @@ class TabController {
     
     var tabCount: Int { return currentDrinks.count }
     
-    var total: Double {
-        var total = 0.0
-        for orderedDrink in currentDrinks {
-            total += orderedDrink.price
-        }
-        return total
-    }
+    var total: Double = 0.0
     
     func orderDrink(drink:  OrderedDrink) {
         currentDrinks.append(drink)
+        total += drink.price
     }
     
     func clearTab() {
         currentDrinks = []
+        total = 0.0
     }
 }
